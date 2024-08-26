@@ -53,7 +53,7 @@ export function App() {
     event.currentTarget.reset();
   };
 
-  const removeemailFromInvites = (emailToRemove: string) => {
+  const removeEmailFromInvites = (emailToRemove: string) => {
     const newEmailList = emailsToInvite.filter(
       (email) => email !== emailToRemove
     );
@@ -170,7 +170,7 @@ export function App() {
                     <span className="text-zinc-300">{email}</span>
                     <button
                       type="button"
-                      onClick={() => removeemailFromInvites(email)}
+                      onClick={() => removeEmailFromInvites(email)}
                     >
                       <X className="size-4 text-zinc-400" />
                     </button>
